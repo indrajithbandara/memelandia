@@ -1,0 +1,79 @@
+#container{
+	width: 800px;
+	margin: 0 auto;
+}
+
+body{
+	font-family: Arial;
+	background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(darkblue, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(dark-blue, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(dark-blue, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(dark-blue, yellow); /* Standard syntax */
+	
+}	
+
+header{
+	margin: 0 auto;
+	background-color: #000024;
+	border: 10px solid gray;
+}
+
+h1{
+	color: white;
+}
+
+h2{
+	padding: 25px;
+	text-decoration: underline;
+}
+
+footer{
+	background-color: yellow;
+	border: 5px dotted blue;
+	margin: 0 auto;
+	clear: both;
+}
+
+main{
+	width: 640px;
+	float: left;
+}
+
+aside{
+	width: 150px;
+	float: left;
+}
+
+main, header, footer, h1, h4, h2, h3{
+	text-align: center;
+}
+
+img{
+	width: 300px;
+}
+
+#muda img{
+	width: 400px;
+}
+
+h3{
+	border: 1px solid green;
+	color: dark-blue;
+	margin: 10px;
+}
+
+ul{
+	font-weight: bold;
+}
+
+ul.circle {list-style-type: circle;}
+
+
+iframe{
+	margin-top: 100px;
+}
+
+.irineu{
+	width: 1000px;
+}

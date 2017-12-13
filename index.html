@@ -4,36 +4,46 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Memelandia</title>
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="meme.css">
+	<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/meme.css">
 </head>
 <body>
 	<div id="container">
 		<header>
 			<h1>Memelandia: Deixa os garoto brincar</h1>
-			<h2><marquee><blink>8922-4002</blink></marquee></h2>
-		</header><!-- /header -->
+			<h2><marquee direction=right> <img src="static/nyan_cat.gif" height="200px"></img></marquee></h2>
+		</header>
+		
 		<main>
 			<h2>Quem sabe de tudo?</h2>
 			<div>
 				<img src="#" id="irineu">
 			</div>
-
 			<div>
 				<button type="button" onclick="irineu()">Ver outras opcoes</button>
 			</div>
 
 			<h3>Tudo muda, ateh...</h3>
 			<div id="muda">
-				<img src="bermuda.jpg" alt="">
+				<img src="static/bermuda.jpg" alt="">
 			</div>
 
 			<h3>Tudo passa, ateh...</h3>
 			<div>
-				<img src="passa.jpg" alt="">
+				<img src="static/passa.jpg" alt="">
 			</div>
 
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/ikgUDj_w55E" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			<center><iframe width="500" height="300" src="https://www.youtube.com/embed/ikgUDj_w55E" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></center>
+			
+<div class="row">
+  <div class="col-sm-4">.col-sm-4</div>a
+  <div class="col-sm-4">.col-sm-4</div>b
+  <div class="col-sm-4">.col-sm-4</div>c
+</div>
+			
+			
 		</main>
 
 		<aside>
@@ -49,11 +59,11 @@
 		</aside>
 		
 		<footer>
-			Memelandia
+			<center>Memelandia</center>		
 		</footer>
 	</div>
 	<script>
-		const vetor = ['irineu1.jpg', 'num_sei.jpg', 'nunca_nem_vi.jpg'];
+		const vetor = ['static/irineu1.jpg', 'static/num_sei.jpg', 'static/nunca_nem_vi.jpg'];
 		let cont = 0, objeto = document.getElementById("irineu");
 		//INIT:
 		objeto.src = vetor[0];
