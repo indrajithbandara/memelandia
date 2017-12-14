@@ -1,3 +1,7 @@
+ul {
+  list-style-type: none;
+}
+
 #muda img, img{
 	width: 400px;
 	margin: 10px;
@@ -10,6 +14,15 @@ img:last-of-type{
 
 h3::first-letter{
 	color: blue;
+}
+
+.col-md-3 img{
+	border-radius: 0%;
+	width: 200px;
+}
+
+header img{
+	width: 200px;
 }
 
 iframe{
@@ -62,6 +75,19 @@ header{
 .imagem:hover {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+}
+
+.links {
+    background-color: #D9E5E3;
+    border: 10px solid #C2CCCA;
+    width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: -10px;
+}
+
+.links ul{
+	margin: 0 auto;
 }
 
 /*
