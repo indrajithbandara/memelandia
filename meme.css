@@ -17,6 +17,10 @@ h1{
 	color: white;
 }
 
+main h2{
+	color: white;
+}
+
 h2{
 	padding: 25px;
 	text-decoration: underline;
@@ -45,6 +49,7 @@ main, header, footer, h1, h4, h2, h3{
 
 img{
 	width: 300px;
+	margin: 10px;
 }
 
 #muda img{
@@ -66,4 +71,8 @@ ul.circle {list-style-type: circle;}
 
 iframe{
 	margin-top: 100px;
+}
+
+footer{
+	background-color: blue;
 }

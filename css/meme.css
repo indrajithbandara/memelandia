@@ -1,23 +1,79 @@
-#container{
-	width: 800px;
+#muda img, img{
+	width: 400px;
+	margin: 10px;
+	border-radius: 20%;
+}
+
+img:last-of-type{
+	border-radius: 50%;	
+}
+
+h3::first-letter{
+	color: blue;
+}
+
+iframe{
+	width: 200px; 
+	height: 200px;
+}
+
+footer{
+	border: 1px solid gray;
+	padding: 20px;
+	height: 150px;
+	text-align: left;
+	color: white;
+	/**/
+	font-family: Arial;
+	background: white; 
+    background: -webkit-linear-gradient(darkblue, yellow); 
+    background: -o-linear-gradient(dark-blue, yellow); 
+    background: -moz-linear-gradient(dark-blue, yellow); 
+    background: linear-gradient(dark-blue, yellow); 
+    /**/
+}
+
+.center{
+	text-align: center;
 	margin: 0 auto;
 }
 
-body{
-	font-family: Arial;
-	background: white; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(darkblue, yellow); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(dark-blue, yellow); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(dark-blue, yellow); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(dark-blue, yellow); /* Standard syntax */
-	
-}	
+h1 span{
+	color: yellow;
+}
 
 header{
-	margin: 0 auto;
-	background-color: #000024;
-	border: 10px solid gray;
+	background-color: green;
+	color: blue;
 }
+
+.col-md-6 + .col-md-3{
+	text-align: left;
+}
+
+.col-md-6 h2{
+	color: purple;
+}
+
+.col-md-6 h3{
+	color: green;
+}
+
+.imagem:hover {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/*
+#container{
+	margin: 0 auto;
+}
+
+body{	
+
+}	
+
+
 
 h1{
 	color: white;
@@ -32,30 +88,21 @@ footer{
 	background-color: yellow;
 	border: 5px dotted blue;
 	margin: 0 auto;
-	clear: both;
 }
 
 main{
 	width: 640px;
-	float: left;
 }
 
 aside{
 	width: 150px;
-	float: left;
 }
 
 main, header, footer, h1, h4, h2, h3{
 	text-align: center;
 }
 
-img{
-	width: 300px;
-}
 
-#muda img{
-	width: 400px;
-}
 
 h3{
 	border: 1px solid green;
@@ -77,3 +124,4 @@ iframe{
 .irineu{
 	width: 1000px;
 }
+*/

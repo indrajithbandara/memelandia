@@ -4,76 +4,70 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Memelandia</title>
-	<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/bootstrap.css">
+	<!--<link rel="stylesheet" href="css/reset.css">-->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/meme.css">
 </head>
 <body>
-	<div id="container">
+	<div class="container-fluid">
 		<header>
-			<h1>Memelandia: Deixa os garoto brincar</h1>
-			<h2><marquee direction=right> <img src="static/nyan_cat.gif" height="200px"></img></marquee></h2>
+			<div class="row center">
+				<div class="col-md-12">
+					<h1>Memelandia: <span>Deixa os garoto brincar</span></h1>
+					<h2><marquee direction=right> <img src="static/nyan_cat.gif" height="200px"></img></marquee></h2>
+				</div>	
+			</div>
 		</header>
-		
 		<main>
-			<h2>Quem sabe de tudo?</h2>
-			<div>
-				<img src="#" id="irineu">
-			</div>
-			<div>
-				<button type="button" onclick="irineu()">Ver outras opcoes</button>
-			</div>
+			<div class="row center">
+				<div class="col-md-3">
+					<h4>Video de Hoje</h4>
+					<center><iframe src="https://www.youtube.com/embed/ikgUDj_w55E" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></center>
+				</div>
+				<div class="col-md-6">
+					<h2>Quem sabe de tudo?</h2>
 
-			<h3>Tudo muda, ateh...</h3>
-			<div id="muda">
-				<img src="static/bermuda.jpg" alt="">
-			</div>
+					<div>
+						<img src="#" class="imagem" id="irineu">
+					</div>
 
-			<h3>Tudo passa, ateh...</h3>
-			<div>
-				<img src="static/passa.jpg" alt="">
-			</div>
+					<div>
+						<button type="button" onclick="irineu()" class="btn btn-primary">Ver outras opcoes</button>
+					</div>
 
-			<center><iframe width="500" height="300" src="https://www.youtube.com/embed/ikgUDj_w55E" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></center>
-			
-<div class="row">
-  <div class="col-sm-4">.col-sm-4</div>a
-  <div class="col-sm-4">.col-sm-4</div>b
-  <div class="col-sm-4">.col-sm-4</div>c
-</div>
-			
-			
+					<h3>Tudo muda, ateh...</h3>
+
+					<div id="muda">
+						<img class="imagem" src="static/bermuda.jpg" alt="">
+					</div>
+
+					<h3>Tudo passa, ateh...</h3>
+
+					<div>
+						<img class="imagem" src="static/passa.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-md-3">
+					<h4>Links legais</h4>
+					<ul class="circle">
+						<li><a href="#" title="">South America Memes</a></li>
+						<li><a href="#" title="">Menes Artistas</a></li>
+						<li><a href="#" title="">Proskpoop</a></li>
+						<li><a href="#" title="">MemeGuy1997</a></li>
+						<li><a href="#`" title="">Mestre3224</a></li>
+						<li><a href="#" title="">Nelson Nascimento, o rei da pisadinha</a></li>
+					</ul>
+				</div>
+			</div>
 		</main>
-
-		<aside>
-			<h4>Links legais</h4>
-			<ul class="circle">
-				<li><a href="" title="">South America Memes</a></li>
-				<li><a href="" title="">Menes Artistas</a></li>
-				<li><a href="" title="">Proskpoop</a></li>
-				<li><a href="" title="">MemeGuy1997</a></li>
-				<li><a href="" title="">Mestre3224</a></li>
-				<li><a href="" title="">Nelson Nascimento, o rei da pisadinha</a></li>
-			</ul>
-		</aside>
-		
 		<footer>
-			<center>Memelandia</center>		
+			<div class="row center">
+				<div class="col-md-12">
+					<center>&copy; Memelandia - 2017</center>		
+				</div>
+			</div>
 		</footer>
 	</div>
-	<script>
-		const vetor = ['static/irineu1.jpg', 'static/num_sei.jpg', 'static/nunca_nem_vi.jpg'];
-		let cont = 0, objeto = document.getElementById("irineu");
-		//INIT:
-		objeto.src = vetor[0];
-		
-		function irineu(){
-			if(cont == 2)
-				cont = -1
-			cont++;
-			objeto.src = vetor[cont];
-		}
-	</script>
+	<script src="js/custom.js"></script>
 </body>
 </html>
