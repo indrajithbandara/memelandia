@@ -2,6 +2,15 @@ ul {
   list-style-type: none;
 }
 
+.container-md-12{
+	font-family: Arial;
+	background: white; 
+    background: -webkit-linear-gradient(darkblue, yellow); 
+    background: -o-linear-gradient(dark-blue, yellow); 
+    background: -moz-linear-gradient(dark-blue, yellow); 
+    background: linear-gradient(dark-blue, yellow); 
+}
+
 #muda img, img{
 	width: 400px;
 	margin: 10px;
@@ -58,6 +67,12 @@ h1 span{
 header{
 	background-color: green;
 	color: blue;
+	font-family: Arial;
+	background: white; 
+    background: -webkit-linear-gradient(darkblue, yellow); 
+    background: -o-linear-gradient(dark-blue, yellow); 
+    background: -moz-linear-gradient(dark-blue, yellow); 
+    background: linear-gradient(dark-blue, yellow); 
 }
 
 .col-md-6 + .col-md-3{
