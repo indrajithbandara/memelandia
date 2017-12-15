@@ -20,7 +20,22 @@ h3::first-letter{
 	border-radius: 0%;
 	width: 200px;
 }
+.col-md-6 + .col-md-3{
+	text-align: left;
+}
 
+.col-md-3 blockquote{
+	width: 280px;
+}
+.col-md-6 h2{
+	color: purple;
+
+}
+
+.col-md-6 h3{
+	color: green;
+
+}
 header img{
 	width: 200px;
 }
@@ -33,9 +48,10 @@ iframe{
 footer{
 	border: 1px solid gray;
 	padding: 20px;
-	height: 150px;
+	height: 80px;
 	text-align: left;
 	color: white;
+	font-size: 30px;
 	/**/
 	font-family: Arial;
 	background: white; 
@@ -55,21 +71,42 @@ h1 span{
 	color: yellow;
 }
 
+main{
+	border: 2px solid blue;
+	background-color: white;
+	color: blue;
+	font-family: Arial;
+	background: white; 
+}
+
+main .col-md-3{
+	border: 2px dotted grey;
+
+}
+
+main .col-md-6{
+	background: #ddd;
+}
+
 header{
 	background-color: green;
 	color: blue;
+	font-family: Arial;
+	background: white; 
+    background: -webkit-linear-gradient(#000015, #000030); 
+    background: -o-linear-gradient(#000015, #000030); 
+    background: -moz-linear-gradient(#000015, #000030); 
+    background: linear-gradient(#000015, #000030); 	
 }
 
-.col-md-6 + .col-md-3{
-	text-align: left;
-}
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('myfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('myfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
 
-.col-md-6 h2{
-	color: purple;
-}
-
-.col-md-6 h3{
-	color: green;
+body{
+	margin: 10px;
 }
 
 .imagem:hover {
@@ -89,65 +126,3 @@ header{
 .links ul{
 	margin: 0 auto;
 }
-
-/*
-#container{
-	margin: 0 auto;
-}
-
-body{	
-
-}	
-
-
-
-h1{
-	color: white;
-}
-
-h2{
-	padding: 25px;
-	text-decoration: underline;
-}
-
-footer{
-	background-color: yellow;
-	border: 5px dotted blue;
-	margin: 0 auto;
-}
-
-main{
-	width: 640px;
-}
-
-aside{
-	width: 150px;
-}
-
-main, header, footer, h1, h4, h2, h3{
-	text-align: center;
-}
-
-
-
-h3{
-	border: 1px solid green;
-	color: dark-blue;
-	margin: 10px;
-}
-
-ul{
-	font-weight: bold;
-}
-
-ul.circle {list-style-type: circle;}
-
-
-iframe{
-	margin-top: 100px;
-}
-
-.irineu{
-	width: 1000px;
-}
-*/
