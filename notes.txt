@@ -57,27 +57,10 @@ Para uma seção:
 
 Nunca use comentários na mesma linha da propriedade:
 
-1
-2
-
-	
-
 p {color: #fff;} /** Nunca use comentários assim **/
 p {color: #fff; /** Nunca use comentários assim **/ }
 
 Assim é melhor:
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-
-	
 
 /** Assim é melhor **/
 p {
@@ -105,3 +88,10 @@ Tudo o mais que toma lugar dentro do componente ou não impacta as duas seções
 Para uma lista completa de propridades e suas ordens, por favor veja Recess,
 
 Declarações relacionadas devem ser agrupadas, colocando posicionamento e as propriedades de box-model perto do topo, seguido das propriedades de tipografia e depois propriedades visuais.
+
+background: -o-linear-gradient(dark-blue, lightblue); 
+background: -moz-linear-gradient(dark-blue, lightblue); 
+background: linear-gradient(dark-blue, lightblue); 
+
+<!--<link rel="stylesheet" href="css/reset.css">-->
+<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->

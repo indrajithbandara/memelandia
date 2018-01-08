@@ -1,32 +1,46 @@
-/*  */
-.dm-alert{
-	background-color: blue;
-}
-
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
     .dm-col {
         width: 100%;
     }
+}
+/* - Generic Declarations - */
+/* Bootstrap like Alert */
+.dm-alert{
+	background-color: blue;
 } 
 
-@media screen and (min-width: 800px) and (max-width: 1600px) {
+/* Video thing */
+iframe{
+	width: 80%;
+	height: 20%;
+}
 
+/* Layout */
+body, header, .col-left, .col-center, .col-right{
+    background: -o-linear-gradient(dark-blue, lightblue); 
+    background: -moz-linear-gradient(dark-blue, lightblue); 
+    background: linear-gradient(dark-blue, lightblue); 
+}
+
+main .col-center h2{
+    background: -webkit-linear-gradient(pink, purple); 
+	background: -o-linear-gradient(pink, purple); 
+	background: -moz-linear-gradient(pink, purple);  
+	background: linear-gradient(pink, purple); 
+}
+
+/* - Specific Declarations - Desktop */
+@media screen and (min-width: 800px) and (max-width: 1600px) {
 	body{	
-	        background-color: lightgreen;
-	        background: -webkit-linear-gradient(darkblue, lightblue); 
-	    	background: -o-linear-gradient(dark-blue, lightblue); 
-	    	background: -moz-linear-gradient(dark-blue, lightblue); 
-	    	background: linear-gradient(dark-blue, lightblue); 
-	    	margin: 10px;
+        background-color: lightgreen;
+        background: -webkit-linear-gradient(darkblue, lightblue); 
+    	margin: 10px;
 	}
 
 	header{
 		background-color: lightblue;
 	    background: -webkit-linear-gradient(lightblue, #7777ff); 
-	    background: -o-linear-gradient(dark-blue, lightblue); 
-	    background: -moz-linear-gradient(dark-blue, lightblue); 
-	    background: linear-gradient(dark-blue, lightblue); 
 		border-radius: 15%;
 		max-height: 300px;
 		margin: 20px;
@@ -44,9 +58,6 @@
 		text-align: center;
 		background-color: lightblue;
 	    background: -webkit-linear-gradient(lightblue, #7777ff); 
-	    background: -o-linear-gradient(dark-blue, lightblue); 
-	    background: -moz-linear-gradient(dark-blue, lightblue); 
-	    background: linear-gradient(dark-blue, lightblue); 
 	}
 
 	.col-left{
@@ -76,11 +87,6 @@
     	text-align: center;
     	background-color: pink;
     	background-color: lightgreen;
-        background: -webkit-linear-gradient(pink, purple); 
-    	background: -o-linear-gradient(pink, purple); 
-    	background: -moz-linear-gradient(pink, purple);  
-    	background: linear-gradient(pink, purple); 
-
     }
 
 	.col-right{
@@ -97,17 +103,14 @@
 
 }
 
+/* - Specific Declarations - Mobile */
 
 @media screen and (min-width: 400px ) and (max-width: 799px) {
 
 	body {	
         background-color: lightgreen;
-        background: -webkit-linear-gradient(darkblue, lightblue); 
-    	background: -o-linear-gradient(dark-blue, lightblue); 
-    	background: -moz-linear-gradient(dark-blue, lightblue); 
-    	background: linear-gradient(dark-blue, lightblue); 
+        background: -webkit-linear-gradient(darkblue, lightblue);
     }
-
 
     main{
     	padding: 10px;
@@ -142,14 +145,10 @@
 
 	.col-left, .col-center, .col-right{
 		background-color: lightblue;
-	    background: -webkit-linear-gradient(lightblue, #7777ff); 
-	    background: -o-linear-gradient(dark-blue, lightblue); 
-	    background: -moz-linear-gradient(dark-blue, lightblue); 
-	    background: linear-gradient(dark-blue, lightblue); 
+	    background: -webkit-linear-gradient(lightblue, #7777ff);
 	}
     
     main .col-left{
-
     	background-color: red;
     	max-width: 100%;
     	padding: 100px;
@@ -173,9 +172,7 @@
 
     }
 
-
  	main .col-center{
-
     	background-color: red;
     	max-width: 680px;    	
     	padding: 10px;
@@ -186,15 +183,9 @@
     	text-align: center;
     	background-color: pink;
     	background-color: lightgreen;
-        background: -webkit-linear-gradient(pink, purple); 
-    	background: -o-linear-gradient(pink, purple); 
-    	background: -moz-linear-gradient(pink, purple);  
-    	background: linear-gradient(pink, purple); 
-
     }
 
     main .col-right{
-
     	background-color: red;
     	max-width: 100%;
     	padding: 10px;
@@ -210,9 +201,9 @@
     	border: 2px dotted blue;
     	color: gold;
     }
+
     footer{
     	background-color: blue;
     	max-width: 100%;
     }
-
 }
