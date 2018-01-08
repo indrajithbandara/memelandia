@@ -17,6 +17,21 @@ iframe{
 }
 
 /* Layout */
+body{
+	background-color: lightgreen;
+    background: -webkit-linear-gradient(darkblue, lightblue); 	
+	text-align: center;
+}
+
+header{
+	background-color: lightblue;
+	padding: 10px;
+}
+
+footer{
+	max-width: 100%;
+}
+
 body, header, .col-left, .col-center, .col-right{
     background: -o-linear-gradient(dark-blue, lightblue); 
     background: -moz-linear-gradient(dark-blue, lightblue); 
@@ -30,27 +45,28 @@ main .col-center h2{
 	background: linear-gradient(pink, purple); 
 }
 
+header h1{
+	color: red;
+}
+
+/* Some visual efects */
+
+
 /* - Specific Declarations - Desktop */
 @media screen and (min-width: 800px) and (max-width: 1600px) {
-	body{	
-        background-color: lightgreen;
-        background: -webkit-linear-gradient(darkblue, lightblue); 
-    	margin: 10px;
-	}
+	body{
+		/* @override */	
+        margin: 10px;
+	}	
 
 	header{
-		background-color: lightblue;
 	    background: -webkit-linear-gradient(lightblue, #7777ff); 
 		border-radius: 15%;
 		max-height: 300px;
-		margin: 20px;
-		padding: 10px;
+		margin:  20px;
 	}
 
-	header h1{
-		text-align: center;
-		color: red;
-	}
+	/* header h1 @override */
 
 	.col-left, .col-center, .col-right{
 		float: left;
@@ -97,21 +113,14 @@ main .col-center h2{
 
 	footer{
 		background-color: green;
-		max-width: 100%
 		max-height: 300px;
 	}
-
 }
 
 /* - Specific Declarations - Mobile */
 
 @media screen and (min-width: 400px ) and (max-width: 799px) {
-
-	body {	
-        background-color: lightgreen;
-        background: -webkit-linear-gradient(darkblue, lightblue);
-    }
-
+	/* body: @override */
     main{
     	padding: 10px;
     	margin: 10px;
@@ -123,8 +132,6 @@ main .col-center h2{
     }
 
 	header{
-		padding-top: 10px;
-		background-color: lightblue;
 		border-radius: 10%;
 		max-height: 250px;	
 		border: 2px dotted #bbbb00;	
@@ -132,15 +139,12 @@ main .col-center h2{
 
 	header h1{
 		padding: 10px;
-		color: red;
-		text-align: center;
 		max-height: 150px;
 	}
 
 	header img{
 		max-width: 100px;
 		max-height: 100px;
-
 	}
 
 	.col-left, .col-center, .col-right{
@@ -204,6 +208,5 @@ main .col-center h2{
 
     footer{
     	background-color: blue;
-    	max-width: 100%;
     }
 }
