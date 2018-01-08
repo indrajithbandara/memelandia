@@ -1,0 +1,107 @@
+# dm-css
+
+Boas práticas de CSS
+
+Entenda como escrever código CSS de forma consciente.
+Prefixos de Nomenclatura
+
+Nós usamos o prefixo ls- para todas as classes do framework. Isso nos ajuda a evitar conflitos com o CSS do produto de terceiros ou com outros frameworks. Qualquer coisa relacionada ao Locaweb Style, coloque o prefixo ls- na frente do nome.
+Aninhamento (nesting) no SASS
+
+Evite aninhar seletores (fazer "nesting"). Só porque você pode fazer isso, não significa que você deve fazê-lo sempre. Considere aninhar se você tem um escopo de estilos para um pai e se há múltiplos elementos para serem aninhados.
+
+Tenha em mente de manter um limite de no máximo três aninhamentos. Isso facilita a leitura e entendimento do código futuramente. Ah, nós usamos SASS no formato original e não SCSS.
+
+/** Assim é melhor **/
+div p a
+  text-decoration: none
+
+/** É permitido, mas use só quando necessário **/
+div
+  background-color: gray
+
+  p
+    color: #FFF
+    background-color: red
+    margin-top: 0
+    padding-bottom: 0
+
+    a
+      text-decoration: none
+
+Cores
+
+Não use nome de cor por extenso e sempre que utilizar uma cor hexadecimal que tenha repetição de valores, use sempre o valor de atalho e sempre com letras minúsculas, assim:
+
+/** Recomendado **/
+p {color: #aaa;}
+
+/** Não Recomendado **/
+p {color: #aaaaaa;}
+a {color: #AAAAAA;}
+
+Aspas
+
+Utilizamos ASPAS DUPLAS no CSS.
+
+input[type="checkout"] { ... }
+div:after { content: " "; }
+
+Comentários
+
+Para uma seção:
+
+/*** HEADER
+**** Header principal do site
+***/
+
+Nunca use comentários na mesma linha da propriedade:
+
+1
+2
+
+	
+
+p {color: #fff;} /** Nunca use comentários assim **/
+p {color: #fff; /** Nunca use comentários assim **/ }
+
+Assim é melhor:
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+	
+
+/** Assim é melhor **/
+p {
+  color: #fff;
+  background: red;
+  margin: 0;
+
+  /** Assim também é bom **/
+  padding: 0;
+}
+
+Ordem das declarações
+
+Não é obrigatório, mas se puder fazer é bom. Declarações relacionadas devem ser agrupadas segundo a seguinte ordem:
+
+    Posicionamento
+    Box model
+    Tipografia
+    Visual
+
+Posicionamento vem primeiro por que isto pode remover um elemento do fluxo normal do documento e substituir estilos relacionados. O box model vem depois pois ele dita as dimensões e lugar do componente.
+
+Tudo o mais que toma lugar dentro do componente ou não impacta as duas seções anteriores, vem por último.
+
+Para uma lista completa de propridades e suas ordens, por favor veja Recess,
+
+Declarações relacionadas devem ser agrupadas, colocando posicionamento e as propriedades de box-model perto do topo, seguido das propriedades de tipografia e depois propriedades visuais.
