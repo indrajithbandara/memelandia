@@ -1,4 +1,4 @@
-* {
+ * {
     box-sizing: border-box;
 }
 
@@ -92,10 +92,12 @@ img{
 		height: 200px;
 	}
 
+
+
 	/*************************************/
 
 	.container .col-2, .container .col-6{
-		padding: 1%px;
+		padding: 1%;
 	}
 
 
