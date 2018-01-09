@@ -8,9 +8,11 @@ html {
 	font-size:22px;
 	line-height: 32px;
 	color: #ffffff;
+	background: linear-gradient(lightblue, blue);
 	margin: 0;
 	padding: 0;
 	word-wrap:break-word !important;
+	text-align: center;
 	/*font-family: 'Open Sans', sans-serif;*/
 }
 
@@ -36,6 +38,21 @@ img{
 [class*="col-"] {
     width: 100%;
 }
+.row .col-10 .header{
+	text-align: center;
+	padding: 2px;
+	margin: 2px;
+	border-radius: 5%;
+	background: linear-gradient(blue, lightblue);
+}
+
+.row .col-10 .footer{
+	text-align: center;
+	padding: 2px;
+	margin: 2px;
+	border-radius: 5%;
+	background: linear-gradient(blue, lightblue);
+}
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
@@ -55,7 +72,10 @@ img{
 	}
 }
 
+
+
 @media only screen and (min-width: 768px) {
+
     /* For desktop: */
 	.col-1{width: 10%;}
 	.col-2{width: 20%;}
@@ -71,6 +91,26 @@ img{
 	marquee img{
 		height: 200px;
 	}
+
+	/*************************************/
+
+	.container .col-2, .container .col-6{
+		padding: 1%px;
+	}
+
+
+	header .col-6{
+		text-align: center;
+	}
+
+	iframe, img{
+		max-width: 80%;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		border-radius: 10%
+	}
+
 }
 
 
